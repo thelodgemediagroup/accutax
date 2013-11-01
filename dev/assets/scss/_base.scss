@@ -1,0 +1,68 @@
+/************************************************************************
+*
+*	Base Styles
+*
+************************************************************************/
+
+body {
+	font-family: $main-font;
+	font-size: $base-font-size;
+}
+.wrapper {
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1030px;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+
+/************************************************************************
+*
+*	Header & Navigation
+*
+************************************************************************/
+
+
+.header {
+
+}
+
+.inner-header {
+	padding: 10px 0px 10px 0px;
+}
+
+.main-nav {
+	margin-top: 5em;
+	a {
+		@include border-radius(3px);
+		color: $accent-color;
+		font-weight: $heavy-font-weight;
+		padding: 0.5em 0.8em 0.5em 0.8em;
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: $accent-color;
+		color: $bkgnd-color;
+	}
+	li {
+		float: left;
+		padding: 0.5em 0.4em 0.5em 0.4em;
+		ul {
+			display: none;
+		}
+	}
+}

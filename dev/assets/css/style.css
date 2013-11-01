@@ -58,3 +58,91 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/************************************************************************
+*
+*	Constants
+*
+************************************************************************/
+/************************************************************************
+*
+*	Mixins
+*
+************************************************************************/
+/************************************************************************
+*
+*	Base Styles
+*
+************************************************************************/
+/* line 7, ../scss/_base.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* line 11, ../scss/_base.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 15, ../scss/_base.scss */
+.container {
+  margin: 0 auto;
+  width: 1030px;
+}
+
+/* line 20, ../scss/_base.scss */
+.floatleft {
+  float: left;
+}
+
+/* line 24, ../scss/_base.scss */
+.floatright {
+  float: right;
+}
+
+/* line 28, ../scss/_base.scss */
+.center {
+  margin: 0 auto;
+}
+
+/************************************************************************
+*
+*	Header & Navigation
+*
+************************************************************************/
+/* line 44, ../scss/_base.scss */
+.inner-header {
+  padding: 10px 0px 10px 0px;
+}
+
+/* line 48, ../scss/_base.scss */
+.main-nav {
+  margin-top: 5em;
+}
+/* line 50, ../scss/_base.scss */
+.main-nav a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #174ca5;
+  font-weight: 700;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  text-decoration: none;
+}
+/* line 57, ../scss/_base.scss */
+.main-nav a:hover {
+  background-color: #174ca5;
+  color: white;
+}
+/* line 61, ../scss/_base.scss */
+.main-nav li {
+  float: left;
+  padding: 0.5em 0.4em 0.5em 0.4em;
+}
+/* line 64, ../scss/_base.scss */
+.main-nav li ul {
+  display: none;
+}

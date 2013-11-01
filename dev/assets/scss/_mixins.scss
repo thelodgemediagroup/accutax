@@ -1,5 +1,38 @@
+/************************************************************************
+*
+*	Constants
+*
+************************************************************************/
+
+
+$main-font: 'Open Sans', sans-serif;
+
+$heavy-font-weight: 700;
+
+$base-font-size: 1em;
+
+$bkgnd-color: #FFFFFF;
+$border-light: #F4F4F4;
+$accent-color: #174CA5;
+
+
+/************************************************************************
+*
+*	Mixins
+*
+************************************************************************/
+
+
 @mixin borderbox {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
 }

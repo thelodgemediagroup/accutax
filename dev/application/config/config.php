@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'local.accutax.com';
+$config['base_url']	= 'local.accutax.com/';
 
 /*
 |--------------------------------------------------------------------------
