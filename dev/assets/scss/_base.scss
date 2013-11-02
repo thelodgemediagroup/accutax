@@ -1,5 +1,30 @@
 /************************************************************************
 *
+*	Constants
+*
+************************************************************************/
+
+
+$main-font: 'Open Sans', sans-serif;
+
+$main-font-color: #777777;
+$headline-font-color: #121214;
+
+$heavy-font-weight: 700;
+
+$base-font-size: 1em;
+$accent-font-size: 1.2em;
+$header-font-size: 1.8em;
+
+$bkgnd-color: #FFFFFF;
+$border-light: #F4F4F4;
+$border-mid: #EDEBF5;
+$bgknd-accent: #F6F4FF;
+$accent-color: #174CA5;
+
+
+/************************************************************************
+*
 *	Base Styles
 *
 ************************************************************************/
@@ -7,7 +32,20 @@
 body {
 	font-family: $main-font;
 	font-size: $base-font-size;
+	color: $main-font-color;
 }
+
+h2 {
+	color: $headline-font-color;
+	font-size: $header-font-size;
+	line-height: $header-font-size;
+}
+
+h3 {
+	font-size: $accent-font-size;
+	line-height: $accent-font-size;
+}
+
 .wrapper {
 	width: 100%;
 }
@@ -29,6 +67,25 @@ body {
 	margin: 0 auto;
 }
 
+.clear {
+	clear: both;
+}
+
+.light-font {
+	font-weight: 300;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-center {
+	text-align: center;
+}
 
 /************************************************************************
 *
@@ -82,4 +139,21 @@ body {
 .hero {
 	background-color: $accent-color;
 	height: 26em;
+}
+
+.featured {
+	margin: 2em 0 2em 0;
+	width: 100%;
+}
+
+.colspan-three {
+	width: 28%;
+	margin: 0.9em;
+	padding: 0.8em;
+}
+
+.featured-el {
+	@include borderbox;
+	border: 1px solid $border-mid;
+	background-color: $bgknd-accent;
 }
