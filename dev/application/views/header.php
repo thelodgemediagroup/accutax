@@ -13,26 +13,26 @@
 				<img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" />
 				<ul class="main-nav floatright">
 					<li class="dropdown">
-						<a href="business/">Business <i class="fa fa-angle-down"></i></a>
+						<a href="<?php echo base_url('business'); ?>">Business <i class="fa fa-angle-down"></i></a>
 						<ul class="drop-down">
-							<li><a href="">Bookkeeping</a></li>
-							<li><a href="">Payroll</a></li>
-							<li><a href="">Income Tax Returns</a></li>
-							<li><a href="">Quickbooks</a></li>
-							<li><a href="">IRS Help</a></li>
+							<li><a href="<?php echo base_url('business/bookkeeping'); ?>">Bookkeeping</a></li>
+							<li><a href="<?php echo base_url('business/payroll'); ?>">Payroll</a></li>
+							<li><a href="<?php echo base_url('business/income_tax_returns'); ?>">Income Tax Returns</a></li>
+							<li><a href="<?php echo base_url('business/quickbooks'); ?>">Quickbooks</a></li>
+							<li><a href="<?php echo base_url('business/irs_help'); ?>">IRS Help</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="">Personal <i class="fa fa-angle-down"></i></a>
+						<a href="<?php echo base_url('personal/'); ?>">Personal <i class="fa fa-angle-down"></i></a>
 						<ul class="drop-down">
-							<li><a href="">Income Tax Returns</a></li>
-							<li><a href="">Quickbooks</a></li>
-							<li><a href="">IRS Help</a></li>
+							<li><a href="<?php echo base_url('personal/income_tax_returns'); ?>">Income Tax Returns</a></li>
+							<li><a href="<?php echo base_url('personal/quickbooks'); ?>">Quickbooks</a></li>
+							<li><a href="<?php echo base_url('personal/irs_help'); ?>">IRS Help</a></li>
 						</ul>
 					</li>
-					<li><a href="">Resources</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Contact Us</a></li>
+					<li><a href="<?php echo base_url('resources/'); ?>">Resources</a></li>
+					<li><a href="<?php echo base_url('about/'); ?>">About</a></li>
+					<li><a href="<?php echo base_url('contact/'); ?>">Contact Us</a></li>
 				</ul><!--/ .main-nav -->
 			</div><!--/ .container -->
 		</div><!--/ .header -->
