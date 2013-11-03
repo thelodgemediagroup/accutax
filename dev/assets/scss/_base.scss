@@ -35,9 +35,10 @@ $border-dark-two: #111111;
 ************************************************************************/
 
 body {
+	background: url(../images/greyzz.png) #fff repeat;
+	color: $main-font-color;
 	font-family: $main-font;
 	font-size: $base-font-size;
-	color: $main-font-color;
 }
 
 h2 {
@@ -96,6 +97,10 @@ h3 {
 	text-align: center;
 }
 
+.line-accent {
+	line-height: 2em;
+}
+
 /************************************************************************
 *
 *	Header & Navigation
@@ -113,26 +118,46 @@ h3 {
 
 .main-nav {
 	margin-top: 4em;
-	a {
-		@include border-radius(3px);
-		color: $accent-color;
-		font-weight: $heavy-font-weight;
-		padding: 0.5em 0.8em 0.5em 0.8em;
-		text-decoration: none;
-	}
-	a:hover {
-		background-color: $accent-color;
-		color: $bkgnd-color;
-	}
 	li {
 		float: left;
 		margin: 10px;
-		padding: 0.5em 0.8em 0.5em 0.8em;
 		position: relative;
-		ul {
+		a {
+			@include border-radius(3px);
+			color: $accent-color;
+			display: inline-block;
+			font-weight: $heavy-font-weight;
+			padding: 0.5em 0.8em 0.5em 0.8em;
+			text-decoration: none;
+		}
+		a:hover {
 			background-color: $accent-color;
-			display: none;
+			color: $bkgnd-color;
+
+		}		
+		ul {
+			background-color: $bkgnd-color;
 			position: absolute;
+			visibility: hidden;
+		}
+	}
+	.dropdown:hover {
+		a {
+			@include nav-border-radius(3px);
+		}
+		ul {
+			@include dropdown-border-radius(3px);
+			visibility: visible;
+			width: 13em;
+			li {
+				margin: 0;
+			}
+			a {
+				color: $accent-color;
+			}
+			a:hover {
+				color: $bkgnd-color;
+			}
 		}
 	}
 }
@@ -161,9 +186,12 @@ h3 {
 	padding: 0.8em;
 }
 
+.colspan-four {
+	width: 24%;
+
+}
+
 .featured-el {
-	background-color: $bgknd-accent;
-	border: 1px solid $border-mid;
 	display: inline-block;
 	p {
 		line-height: 1.2em;
@@ -189,12 +217,21 @@ h3 {
 .footer {
 	background-color: $bkgnd-dark;
 	border-top: 4px solid $border-dark-one;
+	color: #FFFFFF;
+	a {
+		color: #ffffff;
+	}
 }
 
 .inner-footer {
 	background-color: inherit;
 }
 
+.footer-col {
+	display: inline-block;
+	padding: 1em 0 1em 0;
+}
+ 
 .copyright {
 	background-color: $bkgnd-darker;
 	border-top: 4px solid $border-dark-two;

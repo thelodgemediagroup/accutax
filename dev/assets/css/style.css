@@ -76,78 +76,84 @@ table {
 ************************************************************************/
 /* line 37, ../scss/_base.scss */
 body {
+  background: url(../images/greyzz.png) white repeat;
+  color: #121214;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: #121214;
 }
 
-/* line 43, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 h2 {
   font-size: 1.8em;
   line-height: 1.8em;
 }
 
-/* line 48, ../scss/_base.scss */
+/* line 49, ../scss/_base.scss */
 h3 {
   color: #777777;
   font-size: 1.1em;
   line-height: 1.1em;
 }
 
-/* line 54, ../scss/_base.scss */
+/* line 55, ../scss/_base.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 58, ../scss/_base.scss */
+/* line 59, ../scss/_base.scss */
 .container {
   margin: 0 auto;
   width: 1030px;
 }
 
-/* line 63, ../scss/_base.scss */
+/* line 64, ../scss/_base.scss */
 .floatleft {
   float: left;
 }
 
-/* line 67, ../scss/_base.scss */
+/* line 68, ../scss/_base.scss */
 .floatright {
   float: right;
 }
 
-/* line 71, ../scss/_base.scss */
+/* line 72, ../scss/_base.scss */
 .center {
   margin: 0 auto;
 }
 
-/* line 75, ../scss/_base.scss */
+/* line 76, ../scss/_base.scss */
 .clear {
   clear: both;
 }
 
-/* line 79, ../scss/_base.scss */
+/* line 80, ../scss/_base.scss */
 .light-font {
   font-weight: 300;
 }
 
-/* line 83, ../scss/_base.scss */
+/* line 84, ../scss/_base.scss */
 .semi-bold {
   font-weight: 600;
 }
 
-/* line 87, ../scss/_base.scss */
+/* line 88, ../scss/_base.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 91, ../scss/_base.scss */
+/* line 92, ../scss/_base.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 95, ../scss/_base.scss */
+/* line 96, ../scss/_base.scss */
 .text-center {
   text-align: center;
+}
+
+/* line 100, ../scss/_base.scss */
+.line-accent {
+  line-height: 2em;
 }
 
 /************************************************************************
@@ -155,49 +161,93 @@ h3 {
 *	Header & Navigation
 *
 ************************************************************************/
-/* line 106, ../scss/_base.scss */
+/* line 111, ../scss/_base.scss */
 .header {
   border-bottom: 4px solid #f4f4f4;
 }
 
-/* line 110, ../scss/_base.scss */
+/* line 115, ../scss/_base.scss */
 .inner-header {
   padding: 10px 0px 10px 0px;
 }
 
-/* line 114, ../scss/_base.scss */
+/* line 119, ../scss/_base.scss */
 .main-nav {
   margin-top: 4em;
 }
-/* line 116, ../scss/_base.scss */
-.main-nav a {
+/* line 121, ../scss/_base.scss */
+.main-nav li {
+  float: left;
+  margin: 10px;
+  position: relative;
+}
+/* line 125, ../scss/_base.scss */
+.main-nav li a {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
   color: #174ca5;
+  display: inline-block;
   font-weight: 700;
   padding: 0.5em 0.8em 0.5em 0.8em;
   text-decoration: none;
 }
-/* line 123, ../scss/_base.scss */
-.main-nav a:hover {
+/* line 133, ../scss/_base.scss */
+.main-nav li a:hover {
   background-color: #174ca5;
   color: white;
 }
-/* line 127, ../scss/_base.scss */
-.main-nav li {
-  float: left;
-  margin: 10px;
-  padding: 0.5em 0.8em 0.5em 0.8em;
-  position: relative;
-}
-/* line 132, ../scss/_base.scss */
+/* line 138, ../scss/_base.scss */
 .main-nav li ul {
-  background-color: #174ca5;
-  display: none;
+  background-color: white;
   position: absolute;
+  visibility: hidden;
+}
+/* line 145, ../scss/_base.scss */
+.main-nav .dropdown:hover a {
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+/* line 148, ../scss/_base.scss */
+.main-nav .dropdown:hover ul {
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  visibility: visible;
+  width: 13em;
+}
+/* line 152, ../scss/_base.scss */
+.main-nav .dropdown:hover ul li {
+  margin: 0;
+}
+/* line 155, ../scss/_base.scss */
+.main-nav .dropdown:hover ul a {
+  color: #174ca5;
+}
+/* line 158, ../scss/_base.scss */
+.main-nav .dropdown:hover ul a:hover {
+  color: white;
 }
 
 /************************************************************************
@@ -205,32 +255,35 @@ h3 {
 *	Page Content
 *
 ************************************************************************/
-/* line 148, ../scss/_base.scss */
+/* line 173, ../scss/_base.scss */
 .hero {
   background-color: #174ca5;
   height: 26em;
 }
 
-/* line 153, ../scss/_base.scss */
+/* line 178, ../scss/_base.scss */
 .featured {
   margin: 2em 0 2em 0;
   width: 100%;
 }
 
-/* line 158, ../scss/_base.scss */
+/* line 183, ../scss/_base.scss */
 .colspan-three {
   width: 28%;
   margin: 0.6em;
   padding: 0.8em;
 }
 
-/* line 164, ../scss/_base.scss */
+/* line 189, ../scss/_base.scss */
+.colspan-four {
+  width: 24%;
+}
+
+/* line 194, ../scss/_base.scss */
 .featured-el {
-  background-color: #f6f4ff;
-  border: 1px solid #edebf5;
   display: inline-block;
 }
-/* line 168, ../scss/_base.scss */
+/* line 196, ../scss/_base.scss */
 .featured-el p {
   line-height: 1.2em;
   margin-top: 0.8em;
@@ -238,7 +291,7 @@ h3 {
   text-justify: inter-word;
 }
 
-/* line 176, ../scss/_base.scss */
+/* line 204, ../scss/_base.scss */
 .emphasis {
   margin-top: 0.4em;
   margin-bottom: 1em;
@@ -249,18 +302,29 @@ h3 {
 *	Footer
 *
 ************************************************************************/
-/* line 189, ../scss/_base.scss */
+/* line 217, ../scss/_base.scss */
 .footer {
   background-color: #121214;
   border-top: 4px solid #1f1f1f;
+  color: #FFFFFF;
+}
+/* line 221, ../scss/_base.scss */
+.footer a {
+  color: #ffffff;
 }
 
-/* line 194, ../scss/_base.scss */
+/* line 226, ../scss/_base.scss */
 .inner-footer {
   background-color: inherit;
 }
 
-/* line 198, ../scss/_base.scss */
+/* line 230, ../scss/_base.scss */
+.footer-col {
+  display: inline-block;
+  padding: 1em 0 1em 0;
+}
+
+/* line 235, ../scss/_base.scss */
 .copyright {
   background-color: #0c0c0c;
   border-top: 4px solid #111111;
