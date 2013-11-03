@@ -6,7 +6,7 @@ Class Personal extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('personal/personal');
-		$this->load->view('footer');		
+		$this->load->view('footer');
 	}
 
 	public function income_tax_returns()
