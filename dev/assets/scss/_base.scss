@@ -27,6 +27,7 @@ $border-mid: #EDEBF5;
 $border-dark-one: #1F1F1F;
 $border-dark-two: #111111;
 
+$dropdown-width: 13em;
 
 /************************************************************************
 *
@@ -147,16 +148,20 @@ h3 {
 		}
 		ul {
 			@include dropdown-border-radius(3px);
+			overflow: hidden;
 			visibility: visible;
-			width: 13em;
+			width: $dropdown-width;
 			li {
 				margin: 0;
+				width: $dropdown-width;
 			}
 			a {
 				color: $accent-color;
 			}
 			a:hover {
+				@include border-radius(0px);
 				color: $bkgnd-color;
+				width: $dropdown-width;
 			}
 		}
 	}

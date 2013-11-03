@@ -10,7 +10,7 @@
 	<div class="wrapper">
 		<div class="header wrapper">
 			<div class="inner-header container">
-				<img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" />
+				<a href="<?php echo base_url(); ?>"><img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" /></a>
 				<ul class="main-nav floatright">
 					<li class="dropdown">
 						<a href="<?php echo base_url('business'); ?>">Business <i class="fa fa-angle-down"></i></a>
