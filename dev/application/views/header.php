@@ -3,13 +3,13 @@
 <head>
 	<title>Accutax</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_asset('css/style.css'); ?>">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="header wrapper">
 			<div class="inner-header container">
-				<img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" class="float-lefts" />
+				<img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" />
 				<ul class="main-nav floatright">
 					<li>
 						<a href="">Business</a>

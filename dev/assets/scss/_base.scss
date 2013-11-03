@@ -7,20 +7,25 @@
 
 $main-font: 'Open Sans', sans-serif;
 
-$main-font-color: #777777;
-$headline-font-color: #121214;
+$main-font-color: #121214;
+$headline-font-color: #777777;
+$accent-color: #174CA5;
 
 $heavy-font-weight: 700;
 
 $base-font-size: 1em;
-$accent-font-size: 1.2em;
+$accent-font-size: 1.1em;
 $header-font-size: 1.8em;
 
 $bkgnd-color: #FFFFFF;
+$bgknd-accent: #F6F4FF;
+$bkgnd-dark: #121214;
+$bkgnd-darker: #0C0C0C;
+
 $border-light: #F4F4F4;
 $border-mid: #EDEBF5;
-$bgknd-accent: #F6F4FF;
-$accent-color: #174CA5;
+$border-dark-one: #1F1F1F;
+$border-dark-two: #111111;
 
 
 /************************************************************************
@@ -36,12 +41,12 @@ body {
 }
 
 h2 {
-	color: $headline-font-color;
 	font-size: $header-font-size;
 	line-height: $header-font-size;
 }
 
 h3 {
+	color: $headline-font-color;
 	font-size: $accent-font-size;
 	line-height: $accent-font-size;
 }
@@ -81,6 +86,10 @@ h3 {
 
 .bold {
 	font-weight: 700;
+}
+
+.italic {
+	font-style: italic;
 }
 
 .text-center {
@@ -148,12 +157,45 @@ h3 {
 
 .colspan-three {
 	width: 28%;
-	margin: 0.9em;
+	margin: 0.6em;
 	padding: 0.8em;
 }
 
 .featured-el {
-	@include borderbox;
-	border: 1px solid $border-mid;
 	background-color: $bgknd-accent;
+	border: 1px solid $border-mid;
+	display: inline-block;
+	p {
+		line-height: 1.2em;
+		margin-top: 0.8em;
+		text-align:justify;
+		text-justify:inter-word;
+	}
+}
+
+.emphasis {
+	margin-top: 0.4em;
+	margin-bottom: 1em;
+}
+
+
+/************************************************************************
+*
+*	Footer
+*
+************************************************************************/
+
+
+.footer {
+	background-color: $bkgnd-dark;
+	border-top: 4px solid $border-dark-one;
+}
+
+.inner-footer {
+	background-color: inherit;
+}
+
+.copyright {
+	background-color: $bkgnd-darker;
+	border-top: 4px solid $border-dark-two;
 }
