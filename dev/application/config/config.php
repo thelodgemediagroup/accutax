@@ -367,7 +367,7 @@ $config['proxy_ips'] = '';
 | img files. 
 |
 */
-$config['asset_path'] = 'assets/';
+$config['asset_path'] = '/assets/';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
