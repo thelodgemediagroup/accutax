@@ -13,7 +13,7 @@
 				<img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" />
 				<ul class="main-nav floatright">
 					<li class="dropdown">
-						<a href="">Business <i class="fa fa-angle-down"></i></a>
+						<a href="business/">Business <i class="fa fa-angle-down"></i></a>
 						<ul class="drop-down">
 							<li><a href="">Bookkeeping</a></li>
 							<li><a href="">Payroll</a></li>
