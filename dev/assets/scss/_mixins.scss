@@ -48,3 +48,10 @@
 	border-bottom-left-radius: $radius;
 	border-bottom-right-radius: $radius;	
 }
+
+@mixin transition($arg) {
+	-moz-transition: $arg;
+	-webkit-transition: $arg;
+	-o-transition: $arg;
+	transition:	$arg;
+}

@@ -1,15 +1,16 @@
-<div class="sidebar">
+<div class="sidebar floatleft">
+	<h2><?php echo $sidebar_title; ?></h2>
 	<ul>
 		<?php 
-		foreach ($titles as $title)
+		foreach ($titles as $title => $link)
 		{
 			if ($selected == $title)
 			{
-				echo '<li class="selected">'.$title.'</li>';
+				echo '<li><a href="'.base_url($link).'" class="sidebar-selected bold">'.$title.'</a></li>';
 			}
 			else
 			{
-				echo '<li>'.$title.'</li>';
+				echo '<li><a href="'.base_url($link).'" class="bold">'.$title.'</a></li>';
 			}
 		}
 		?>

@@ -2,11 +2,20 @@
 
 Class Business extends CI_Controller {
 
-	private $sidebar_data = array('Bookkeeping', 'Payroll', 'Income Tax Returns', 'Quickbooks', 'IRS Help');
+	private $sidebar_data = array(
+			'Bookkeeping' => 'business/bookkeeping',
+			'Payroll' => 'business/payroll',
+			'Income Tax Returns' => 'business/income_tax_returns',
+			'Quickbooks' => 'business/quickbooks',
+			'IRS Help' => 'business/irs_help'
+		);
+	
+	private $sidebar_title = 'Business';
 
 	public function index()
 	{
 		$sidebar['titles'] = $this->sidebar_data;
+		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = '';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
 
@@ -18,6 +27,7 @@ Class Business extends CI_Controller {
 	public function bookkeeping()
 	{
 		$sidebar['titles'] = $this->sidebar_data;
+		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Bookkeeping';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
 
@@ -29,6 +39,7 @@ Class Business extends CI_Controller {
 	public function payroll()
 	{
 		$sidebar['titles'] = $this->sidebar_data;
+		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Payroll';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
 
@@ -40,6 +51,7 @@ Class Business extends CI_Controller {
 	public function income_tax_returns()
 	{
 		$sidebar['titles'] = $this->sidebar_data;
+		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Income Tax Returns';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
 
@@ -51,6 +63,7 @@ Class Business extends CI_Controller {
 	public function quickbooks()
 	{
 		$sidebar['titles'] = $this->sidebar_data;
+		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Quickbooks';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
 
@@ -62,6 +75,7 @@ Class Business extends CI_Controller {
 	public function irs_help()
 	{
 		$sidebar['titles'] = $this->sidebar_data;
+		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'IRS Help';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
 
