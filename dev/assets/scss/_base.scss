@@ -133,6 +133,24 @@ h3 {
 .accent {
 	color: $headline-font-color;
 }
+
+.logo-color {
+	color: $accent-color;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.large {
+	font-size: 1.3em;
+}
+
+.category-headline {
+	margin-top: 1.4em;
+	margin-bottom: 1.4em;
+	margin: 3em 0 3em 3em;
+}
 /************************************************************************
 *
 *	Header & Navigation
@@ -150,6 +168,7 @@ h3 {
 
 .main-nav {
 	margin-top: 4em;
+	@include text-select;
 	li {
 		float: left;
 		margin: 10px;
@@ -176,9 +195,12 @@ h3 {
 	.dropdown:hover {
 		a {
 			@include nav-border-radius(3px);
+			background-color: $accent-color;
+			color: #fff;
 		}
 		ul {
 			@include dropdown-border-radius(3px);
+			background-color: $accent-color;
 			overflow: hidden;
 			visibility: visible;
 			width: $dropdown-width;
@@ -188,11 +210,13 @@ h3 {
 				width: $dropdown-width;
 			}
 			a {
-				color: $accent-color;
+				font-weight: 400;
+				color: #ffffff;
 			}
 			a:hover {
 				@include border-radius(0px);
-				color: $bkgnd-color;
+				background-color: #216AE9;
+				
 				width: $dropdown-width;
 			}
 		}
@@ -208,7 +232,7 @@ h3 {
 
 
 .hero {
-	background-color: $accent-color;
+	background-color: #D7E0EF;
 	height: 26em;
 }
 
@@ -238,6 +262,27 @@ h3 {
 	}
 }
 
+.info-button {
+	margin-top: 4em;	
+	text-align: center;
+	a {
+		@include border-radius(5px);
+		background-color: $accent-color;
+		color: #fff;
+		font-size: 0.9em;
+		font-weight: 300;
+		padding: 10px 30px 10px 30px;
+		text-decoration: none;
+		-moz-transition: background-color 0.4s;
+		-webkit-transition: background-color 0.4s;
+		-o-transition: background-color 0.4s;
+		transition: background-color 0.4s;		
+	}
+	a:hover {
+		background-color: #216AE9;
+	}
+}
+
 .subpage {
 	height: 100%;
 	margin-bottom: 2em;
@@ -252,6 +297,24 @@ h3 {
 	margin-top: 2em;
 }
 
+.category {
+	h1 {
+		margin: 1em;
+	}
+	h3 {
+		text-align: center;
+	}
+	p {
+		line-height: 1.7em;
+		margin: 2em;
+		text-align: justify;
+	}
+	a {
+		color: $accent-color;
+		text-decoration: none;
+	}
+}
+
 .indent {
 	margin-left: 4em;
 }
@@ -263,6 +326,7 @@ h3 {
 
 
 .sidebar {
+	@include text-select;
 	display: inline-block;
 	width: 20%;
 	ul {
@@ -304,8 +368,17 @@ h3 {
 	background-color: $bkgnd-dark;
 	border-top: 4px solid $border-dark-one;
 	color: #FFFFFF;
+	margin-top: 10em;
 	a {
 		color: #ffffff;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	p {
+		font-size: 0.8em;
 	}
 }
 

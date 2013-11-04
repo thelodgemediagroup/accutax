@@ -1,6 +1,6 @@
 <div class="subpage container-800 clear">
 	<h1>Resources</h1>
-	<h3 class="accent emphasis indent">Forms and Important Information</h3>
+	<h3 class="accent emphasis indent text-center">Forms and Important Information</h3>
 
 	<h3 class="emphasis list-heading">Employee Forms</h3>
 	<div class="indent">

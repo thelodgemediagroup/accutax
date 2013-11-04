@@ -32,7 +32,7 @@
 					</li>
 					<li><a href="<?php echo base_url('resources/'); ?>">Resources</a></li>
 					<li><a href="<?php echo base_url('about/'); ?>">About</a></li>
-					<li><a href="<?php echo base_url('contact/'); ?>">Contact Us</a></li>
+					<li><a href="<?php // echo base_url('contact/'); ?>">Contact Us</a></li>
 				</ul><!--/ .main-nav -->
 			</div><!--/ .container -->
 		</div><!--/ .header -->

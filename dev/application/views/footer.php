@@ -27,5 +27,7 @@
 			</div><!--/ .inner-footer -->
 		</div><!--/ .footer -->
 	</div><!--/ .wrapper -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_asset('js/scripts.js'); ?>"></script>	
 </body>
 </html>
