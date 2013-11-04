@@ -307,32 +307,37 @@ h3 {
 
 /************************************************************************
 *
+*	Sidebar
+*
+************************************************************************/
+/************************************************************************
+*
 *	Footer
 *
 ************************************************************************/
-/* line 222, ../scss/_base.scss */
+/* line 234, ../scss/_base.scss */
 .footer {
   background-color: #121214;
   border-top: 4px solid #1f1f1f;
   color: #FFFFFF;
 }
-/* line 226, ../scss/_base.scss */
+/* line 238, ../scss/_base.scss */
 .footer a {
   color: #ffffff;
 }
 
-/* line 231, ../scss/_base.scss */
+/* line 243, ../scss/_base.scss */
 .inner-footer {
   background-color: inherit;
 }
 
-/* line 235, ../scss/_base.scss */
+/* line 247, ../scss/_base.scss */
 .footer-col {
   display: inline-block;
   padding: 1em 0 1em 0;
 }
 
-/* line 240, ../scss/_base.scss */
+/* line 252, ../scss/_base.scss */
 .copyright {
   background-color: #0c0c0c;
   border-top: 4px solid #111111;
