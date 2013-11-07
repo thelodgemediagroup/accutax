@@ -4,6 +4,7 @@
 	<title>Accutax</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_asset('css/style.css'); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>

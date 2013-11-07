@@ -6,6 +6,7 @@
 
 
 $main-font: 'Open Sans', sans-serif;
+$secondary-font: 'Yanone Kaffeesatz', 'Open Sans', sans-serif;
 
 $main-font-color: #121214;
 $headline-font-color: #777777;
@@ -27,7 +28,7 @@ $border-mid: #EDEBF5;
 $border-dark-one: #1F1F1F;
 $border-dark-two: #111111;
 
-$dropdown-width: 13em;
+$dropdown-width: 20em;
 
 /************************************************************************
 *
@@ -40,6 +41,7 @@ body {
 	color: $main-font-color;
 	font-family: $main-font;
 	font-size: $base-font-size;
+	letter-spacing: 1.4px;
 }
 
 h1, h2 {
@@ -167,7 +169,11 @@ h3 {
 }
 
 .main-nav {
+	font-size: 0.8em;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
 	margin-top: 4em;
+	word-wrap: none;
 	@include text-select;
 	li {
 		float: left;
@@ -189,6 +195,7 @@ h3 {
 		ul {
 			background-color: $bkgnd-color;
 			position: absolute;
+			text-transform: none;
 			visibility: hidden;
 		}
 	}
@@ -263,8 +270,11 @@ h3 {
 }
 
 .info-button {
-	margin-top: 4em;	
+	font-size: 0.8em;
+	letter-spacing: 1.4px;
+	margin-top: 4em;
 	text-align: center;
+	text-transform: uppercase;
 	a {
 		@include border-radius(5px);
 		background-color: $accent-color;
@@ -315,6 +325,11 @@ h3 {
 	}
 }
 
+.page-text {
+	line-height: 1.7em;
+	text-align: justify;
+}
+
 .indent {
 	margin-left: 4em;
 }
@@ -327,6 +342,9 @@ h3 {
 
 .sidebar {
 	@include text-select;
+	font-size: 0.8em;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;	
 	display: inline-block;
 	width: 20%;
 	ul {
