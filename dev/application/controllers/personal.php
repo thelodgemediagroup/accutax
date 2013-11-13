@@ -17,6 +17,7 @@ Class Personal extends CI_Controller {
 		$sidebar['selected'] = '';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
 		$data['title'] = 'Personal | Accutax';
+		$data['page_desc'] = 'Accutax can help you earn more money on your personal income tax returns.';
 
 		$this->load->view('header', $data);
 		$this->load->view('personal/personal', $data);
@@ -30,6 +31,7 @@ Class Personal extends CI_Controller {
 		$sidebar['selected'] = 'Income Tax Returns';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
 		$data['title'] = 'Income Tax Returns | Accutax';
+		$data['page_desc'] = 'Accutax can help you earn more money on your personal income tax returns.';
 
 		$this->load->view('header', $data);
 		$this->load->view('personal/income_tax_returns', $data);
@@ -43,6 +45,7 @@ Class Personal extends CI_Controller {
 		$sidebar['selected'] = 'QuickBooks';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
 		$data['title'] = 'QuickBooks | Accutax';
+		$data['page_desc'] = 'Learn to manage your finances like a pro with QuickBooks help from Accutax.';
 
 		$this->load->view('header', $data);
 		$this->load->view('personal/quickbooks', $data);
@@ -56,6 +59,7 @@ Class Personal extends CI_Controller {
 		$sidebar['selected'] = 'IRS Help';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
 		$data['title'] = 'IRS Help | Accutax';
+		$data['page_desc'] = 'We\'re certified Enrolled Agents. We can represent you before the Internal Revenue Service.';
 
 		$this->load->view('header', $data);
 		$this->load->view('personal/irs_help', $data);
