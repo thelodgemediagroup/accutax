@@ -4,7 +4,9 @@ Class Contact extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header');
+		$data['title'] = 'Contact | Accutax';
+
+		$this->load->view('header', $data);
 		$this->load->view('contact/contact');
 		$this->load->view('footer');
 	}

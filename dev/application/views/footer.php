@@ -15,13 +15,13 @@
 					</p>
 					<p class="line-accent">
 						<i class="fa fa-envelope"></i>
-						&nbsp; <a href="">info@eaccutax.com</a>
+						&nbsp; <a href="mailto:janis@eaccutax.com">janis@eaccutax.com</a>
 					</p>
 					<p>&nbsp;</p>
 					<p>Accutax</p>
 					<p>8639 Hall Rd</p>
 					<p>Utica, MI 48317</p>
-					<p><a href="">Map</p>
+					<p><a href="<?php echo base_url('contact/'); ?>">Map</p>
 				</div><!--/ colspan-four -->
 
 			</div><!--/ .inner-footer -->

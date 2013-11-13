@@ -4,7 +4,9 @@ Class Resources extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header');
+		$data['title'] = 'Resources | Accutax';
+
+		$this->load->view('header', $data);
 		$this->load->view('resources/resources');
 		$this->load->view('footer');		
 	}

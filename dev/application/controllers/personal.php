@@ -16,8 +16,9 @@ Class Personal extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = '';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
+		$data['title'] = 'Personal | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('personal/personal', $data);
 		$this->load->view('footer');
 	}
@@ -28,8 +29,9 @@ Class Personal extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Income Tax Returns';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
+		$data['title'] = 'Income Tax Returns | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('personal/income_tax_returns', $data);
 		$this->load->view('footer');		
 	}
@@ -40,8 +42,9 @@ Class Personal extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'QuickBooks';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
+		$data['title'] = 'QuickBooks | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('personal/quickbooks', $data);
 		$this->load->view('footer');		
 	}
@@ -52,8 +55,9 @@ Class Personal extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'IRS Help';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
+		$data['title'] = 'IRS Help | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('personal/irs_help', $data);
 		$this->load->view('footer');		
 	}

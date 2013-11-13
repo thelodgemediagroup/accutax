@@ -18,8 +18,9 @@ Class Business extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = '';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
+		$data['title'] = 'Business | Accutax';
 
-		$this->load->view('header');		
+		$this->load->view('header', $data);		
 		$this->load->view('business/business', $data);
 		$this->load->view('footer');
 	}
@@ -30,8 +31,9 @@ Class Business extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Accounting';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
+		$data['title'] = 'Accounting | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('business/accounting', $data);
 		$this->load->view('footer');
 	}
@@ -42,8 +44,9 @@ Class Business extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Payroll';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
+		$data['title'] = 'Payroll | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('business/payroll', $data);
 		$this->load->view('footer');		
 	}
@@ -54,8 +57,9 @@ Class Business extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'Income Tax Returns';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
+		$data['title'] = 'Income Tax Returns | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('business/income_tax_returns', $data);
 		$this->load->view('footer');		
 	}
@@ -66,8 +70,9 @@ Class Business extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'QuickBooks';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
+		$data['title'] = 'QuickBooks | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('business/quickbooks', $data);
 		$this->load->view('footer');		
 	}
@@ -78,8 +83,9 @@ Class Business extends CI_Controller {
 		$sidebar['sidebar_title'] = $this->sidebar_title;
 		$sidebar['selected'] = 'IRS Help';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
+		$data['title'] = 'IRS Help | Accutax';
 
-		$this->load->view('header');
+		$this->load->view('header', $data);
 		$this->load->view('business/irs_help', $data);
 		$this->load->view('footer');		
 	}
