@@ -3,7 +3,7 @@
 Class Business extends CI_Controller {
 
 	private $sidebar_data = array(
-			'Bookkeeping' => 'business/bookkeeping',
+			'Accounting' => 'business/accounting',
 			'Payroll' => 'business/payroll',
 			'Income Tax Returns' => 'business/income_tax_returns',
 			'Quickbooks' => 'business/quickbooks',
@@ -24,15 +24,15 @@ Class Business extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public function bookkeeping()
+	public function accounting()
 	{
 		$sidebar['titles'] = $this->sidebar_data;
 		$sidebar['sidebar_title'] = $this->sidebar_title;
-		$sidebar['selected'] = 'Bookkeeping';
+		$sidebar['selected'] = 'Accounting';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
 
 		$this->load->view('header');
-		$this->load->view('business/bookkeeping', $data);
+		$this->load->view('business/accounting', $data);
 		$this->load->view('footer');
 	}
 

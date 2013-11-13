@@ -16,7 +16,7 @@
 					<li class="dropdown">
 						<a href="<?php echo base_url('business'); ?>">Business <i class="fa fa-angle-down"></i></a>
 						<ul class="drop-down">
-							<li><a href="<?php echo base_url('business/bookkeeping'); ?>">Bookkeeping</a></li>
+							<li><a href="<?php echo base_url('business/accounting'); ?>">Accounting</a></li>
 							<li><a href="<?php echo base_url('business/payroll'); ?>">Payroll</a></li>
 							<li><a href="<?php echo base_url('business/income_tax_returns'); ?>">Income Tax Returns</a></li>
 							<li><a href="<?php echo base_url('business/quickbooks'); ?>">Quickbooks</a></li>
