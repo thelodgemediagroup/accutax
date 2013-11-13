@@ -19,7 +19,7 @@
 							<li><a href="<?php echo base_url('business/accounting'); ?>">Accounting</a></li>
 							<li><a href="<?php echo base_url('business/payroll'); ?>">Payroll</a></li>
 							<li><a href="<?php echo base_url('business/income_tax_returns'); ?>">Income Tax Returns</a></li>
-							<li><a href="<?php echo base_url('business/quickbooks'); ?>">Quickbooks</a></li>
+							<li><a href="<?php echo base_url('business/quickbooks'); ?>">QuickBooks</a></li>
 							<li><a href="<?php echo base_url('business/irs_help'); ?>">IRS Help</a></li>
 						</ul>
 					</li>
@@ -27,7 +27,7 @@
 						<a href="<?php echo base_url('personal/'); ?>">Personal <i class="fa fa-angle-down"></i></a>
 						<ul class="drop-down">
 							<li><a href="<?php echo base_url('personal/income_tax_returns'); ?>">Income Tax Returns</a></li>
-							<li><a href="<?php echo base_url('personal/quickbooks'); ?>">Quickbooks</a></li>
+							<li><a href="<?php echo base_url('personal/quickbooks'); ?>">QuickBooks</a></li>
 							<li><a href="<?php echo base_url('personal/irs_help'); ?>">IRS Help</a></li>
 						</ul>
 					</li>

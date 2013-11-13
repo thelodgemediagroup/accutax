@@ -6,7 +6,7 @@ Class Business extends CI_Controller {
 			'Accounting' => 'business/accounting',
 			'Payroll' => 'business/payroll',
 			'Income Tax Returns' => 'business/income_tax_returns',
-			'Quickbooks' => 'business/quickbooks',
+			'QuickBooks' => 'business/quickbooks',
 			'IRS Help' => 'business/irs_help'
 		);
 	
@@ -64,7 +64,7 @@ Class Business extends CI_Controller {
 	{
 		$sidebar['titles'] = $this->sidebar_data;
 		$sidebar['sidebar_title'] = $this->sidebar_title;
-		$sidebar['selected'] = 'Quickbooks';
+		$sidebar['selected'] = 'QuickBooks';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);
 
 		$this->load->view('header');

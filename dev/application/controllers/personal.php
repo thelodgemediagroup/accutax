@@ -4,7 +4,7 @@ Class Personal extends CI_Controller {
 	
 	private $sidebar_data = array(
 			'Income Tax Returns' => 'personal/income_tax_returns',
-			'Quickbooks' => 'personal/quickbooks',
+			'QuickBooks' => 'personal/quickbooks',
 			'IRS Help' => 'personal/irs_help'
 		);
 
@@ -38,7 +38,7 @@ Class Personal extends CI_Controller {
 	{
 		$sidebar['titles'] = $this->sidebar_data;
 		$sidebar['sidebar_title'] = $this->sidebar_title;
-		$sidebar['selected'] = 'Quickbooks';
+		$sidebar['selected'] = 'QuickBooks';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
 
 		$this->load->view('header');
