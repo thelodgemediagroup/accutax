@@ -1,0 +1,74 @@
+<?php header('Content-type: text/xml'); ?>
+<?php '<?xml version="1.0" encoding="UTF-8" ?>' ?>
+
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://eaccutax.com/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/business</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/business/accounting</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/business/payroll</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/business/income_tax_returns</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/business/quickbooks</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/business/irs_help</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/personal</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/personal/income_tax_returns</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/personal/quickbooks</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/personal/irs_help</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/resources</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/about</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/contact</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/personal/personal</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://eaccutax.com/business/business</loc>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

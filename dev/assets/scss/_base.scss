@@ -154,10 +154,27 @@ h3 {
 	margin: 3em 0 3em 3em;
 }
 
+.headline-small {
+	font-size: 1em !important;
+}
+
 .top-space {
 	margin-top: 6em;
 }
 
+.feature-img {
+	@include borderbox;
+	border: 3px solid $accent-color;
+	height: inherit;
+	width: inherit;
+}
+
+.img-border {
+	border: 1px solid #ccc;
+	height: 416px;
+	margin: 2em 0 2em 0;
+	width: 800px;
+}
 
 /************************************************************************
 *
@@ -310,6 +327,10 @@ h3 {
 		text-align:justify;
 		text-justify:inter-word;
 	}
+}
+
+.align-left {
+	text-align: left !important;
 }
 
 .featured-short {

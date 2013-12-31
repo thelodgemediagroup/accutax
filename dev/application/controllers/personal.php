@@ -59,7 +59,7 @@ Class Personal extends CI_Controller {
 		$sidebar['selected'] = 'IRS Help';
 		$data['sidebar'] = $this->load->view('sidebar', $sidebar, TRUE);		
 		$data['title'] = 'IRS Help | Accutax';
-		$data['page_desc'] = 'We\'re certified Enrolled Agents. We can represent you before the Internal Revenue Service.';
+		$data['page_desc'] = 'We are certified Enrolled Agents. We can represent you before the Internal Revenue Service.';
 
 		$this->load->view('header', $data);
 		$this->load->view('personal/irs_help', $data);
