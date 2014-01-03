@@ -38,7 +38,25 @@
 *
 ************************************************************************/
 
+.hero {
+	h1 {
+		font-size: 7em;
+		top: 20px;
+	}
+}
 
+.title-bkgnd {
+	background-color: $accent-color;
+	width: 440px;
+	height:0;
+	position: absolute;
+	top: 0;
+	right: 30px;
+}
+
+.hero-bkgnd {
+	width: 1030px;
+}
 
 /************************************************************************
 *

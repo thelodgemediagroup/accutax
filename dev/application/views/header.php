@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="header wrapper">
+		<div class="header wrapper clear">
 			<div class="inner-header container">
 				<a href="<?php echo base_url(); ?>" class="header-logo"><img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" /></a>
 				<p class="header-phone"><i class="fa fa-phone"></i> &nbsp; (586) 580-3040</p>

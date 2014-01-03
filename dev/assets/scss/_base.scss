@@ -214,30 +214,21 @@ h3 {
 
 
 .hero {
-	height: 26em;
-	position: relative;
-	h1 {
-		@include text-select;
-		color: #fff;
-		cursor: default;	
-		font-weight: 300;
-		font-size: 7em;
-		letter-spacing: -5px;
-		position: absolute;
-		top: 20px;
-		left: 0px;
-	}
+	display: none;
 }
 
 .hero-bkgnd {
 	position: absolute;
 	left: 0;
+	
+	max-width: 100%;
+	min-width: 320px;
 	top: 0;
 }
 
 .title-bkgnd {
 	background-color: $accent-color;
-	width: 440px;
+	width: 300px;
 	height:0;
 	position: absolute;
 	top: 0;

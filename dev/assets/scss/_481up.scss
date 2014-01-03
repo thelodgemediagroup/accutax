@@ -16,6 +16,23 @@
 *
 ************************************************************************/
 
+.hero {
+	display: block;
+	height: 26em;
+	position: relative;
+	h1 {
+		@include text-select;
+		color: #fff;
+		cursor: default;	
+		font-weight: 300;
+		font-size: 5em;
+		letter-spacing: -5px;
+		position: absolute;
+		top: 15px;
+		left: 0px;
+	}
+}
+
 .header-logo {
 	display: inline-block;
 }
@@ -36,7 +53,9 @@
 *
 ************************************************************************/
 
-
+.hero-bkgnd {
+	width: 481px;
+}
 
 /************************************************************************
 *
