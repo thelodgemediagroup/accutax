@@ -6,7 +6,6 @@
 
 
 $main-font: 'Open Sans', sans-serif;
-$secondary-font: 'Yanone Kaffeesatz', 'Open Sans', sans-serif;
 
 $main-font-color: #121214;
 $headline-font-color: #777777;
@@ -60,7 +59,7 @@ h3 {
 
 .container {
 	margin: 0 auto;
-	width: 1030px;
+	min-width: 320px;
 }
 
 .container-800 {
@@ -187,79 +186,23 @@ h3 {
 	border-bottom: 4px solid $border-light;
 }
 
+.header-logo {
+	display: block;
+	margin: 0 auto;
+	width: 246px;
+}
+
 .inner-header {
 	padding: 10px 0px 10px 0px;
 	position: relative;
 }
 
 .header-phone {
-	color: $accent-color;
-	font-size: 0.8em;
-	position: absolute;
-	top: 45px;
-	right: 22px;
+	display: none;
 }
 
 .main-nav {
-	font-size: 0.8em;
-	letter-spacing: 1.4px;
-	text-transform: uppercase;
-	margin-top: 6em;
-	word-wrap: none;
-	@include text-select;
-	li {
-		float: left;
-		margin: 10px;
-		position: relative;
-		a {
-			@include border-radius(3px);
-			color: $accent-color;
-			display: inline-block;
-			font-weight: $heavy-font-weight;
-			padding: 0.5em 0.8em 0.5em 0.8em;
-			text-decoration: none;
-		}
-		a:hover {
-			background-color: $accent-color;
-			color: $bkgnd-color;
-
-		}		
-		ul {
-			background-color: $bkgnd-color;
-			position: absolute;
-			text-transform: none;
-			visibility: hidden;
-		}
-	}
-	.dropdown:hover {
-		a {
-			@include nav-border-radius(3px);
-			background-color: $accent-color;
-			color: #fff;
-		}
-		ul {
-			@include dropdown-border-radius(3px);
-			background-color: $accent-color;
-			overflow: hidden;
-			visibility: visible;
-			width: $dropdown-width;
-			z-index: 10;
-			li {
-				margin: 0;
-				width: $dropdown-width;
-			}
-			a {
-				font-weight: 400;
-				color: #ffffff;
-			}
-			a:hover {
-				@include border-radius(0px);
-				background-color: #216AE9;
-				
-				width: $dropdown-width;
-			}
-		}
-	}
+	display: none;
 }
 
 

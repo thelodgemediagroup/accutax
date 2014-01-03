@@ -7,14 +7,13 @@
 	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_asset('css/style.css'); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="header wrapper">
 			<div class="inner-header container">
-				<a href="<?php echo base_url(); ?>"><img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" /></a>
+				<a href="<?php echo base_url(); ?>" class="header-logo"><img src="<?php echo get_asset('images/accutax_logo.png'); ?>" alt="Accutax Accounting" /></a>
 				<p class="header-phone"><i class="fa fa-phone"></i> &nbsp; (586) 580-3040</p>
 				<ul class="main-nav floatright">
 					<li class="dropdown">

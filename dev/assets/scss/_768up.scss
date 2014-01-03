@@ -1,0 +1,111 @@
+/************************************************************************
+*
+*	Base Styles
+*
+************************************************************************/
+
+
+.container {
+	width: 768px;
+}
+
+
+/************************************************************************
+*
+*	Header & Navigation
+*
+************************************************************************/
+
+
+
+.main-nav {
+	display: block;
+	font-size: 0.7em;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	margin-top: 8em;
+	word-wrap: none;
+	@include text-select;
+	li {
+		float: left;
+		position: relative;
+		a {
+			@include border-radius(3px);
+			color: $accent-color;
+			display: inline-block;
+			font-weight: $heavy-font-weight;
+			padding: 0.5em 0.8em 0.5em 0.8em;
+			text-decoration: none;
+		}
+		a:hover {
+			background-color: $accent-color;
+			color: $bkgnd-color;
+
+		}		
+		ul {
+			background-color: $bkgnd-color;
+			position: absolute;
+			text-transform: none;
+			visibility: hidden;
+		}
+	}
+	.dropdown:hover {
+		a {
+			@include nav-border-radius(3px);
+			background-color: $accent-color;
+			color: #fff;
+		}
+		ul {
+			@include dropdown-border-radius(3px);
+			background-color: $accent-color;
+			overflow: hidden;
+			visibility: visible;
+			width: $dropdown-width;
+			z-index: 10;
+			li {
+				margin: 0;
+				width: $dropdown-width;
+			}
+			a {
+				font-weight: 400;
+				color: #ffffff;
+			}
+			a:hover {
+				@include border-radius(0px);
+				background-color: #216AE9;
+				
+				width: $dropdown-width;
+			}
+		}
+	}
+}
+
+.header-phone {
+	font-size: 0.7em;
+	right: 10px;
+	top: 45px;	
+}
+
+/************************************************************************
+*
+*	Page Content
+*
+************************************************************************/
+
+
+
+/************************************************************************
+*
+*	Sidebar
+*
+************************************************************************/
+
+
+
+
+/************************************************************************
+*
+*	Footer
+*
+************************************************************************/
+

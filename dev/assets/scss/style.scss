@@ -7,3 +7,23 @@
 // import the main style
 @import "base.scss";
 
+@media only screen and (min-width: 481px) {
+
+	// styles in 481up.scss
+	@import "481up";
+
+} // end of media query
+
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.scss
+	@import "768up";
+
+} // end of media query
+
+@media only screen and (min-width: 1030px) {
+
+	// styles in 1030up.scss
+	@import "1030up";
+
+} // end of media query
