@@ -36,30 +36,69 @@ $(document).ready(function() {
 
 		var currWidth = $(window).width() + 15;
 
-		var titleLeft; titleHeight; titleTop;
+		var title = {
+			left: 0,
+			height: 0,
+			top: 0
+		};
 
-		titleLeft = currWidth < 1030 ? 466 : 600;
-		titleHeight = currWidth < 1030 ? 96 : 124;
-		titleTop = currWidth < 1030 ? 40 : 64;		
+		if (currWidth > 1030) {
+			title = {
+				left: 600,
+				height: 124,
+				top: 64
+			};
+		} else if (currWidth < 1030 && currWidth > 768) {
+			title = {
+				left: 466,
+				height: 96,
+				top: 40
+			};
+		} else if (currWidth < 768) {
+			title = {
+				left: 266,
+				height: 50,
+				top: 20
+			};
+		}
 
-		animateTitle(titleLeft, titleHeight, titleTop, 300, 300);
+		animateTitle(title.left, title.height, title.top, 300, 300);
 
 	}
 
 	var currWidth = $(window).width() + 15;
 
-	if (currWidth > 768) {
+	if (currWidth > 480) {
+		var size = {
+			left: 0,
+			height: 0,
+			top: 0
+		};
 
-		var titleLeft = currWidth < 1030 ? 466 : 600;
-		var titleHeight = currWidth < 1030 ? 96 : 124;
-		var titleTop = currWidth < 1030 ? 40 : 64;
-
-
+		if (currWidth > 1030) {
+			size = {
+				left: 600,
+				height: 124,
+				top: 64
+			};
+		} else if (currWidth < 1030 && currWidth > 768) {
+			size = {
+				left: 466,
+				height: 96,
+				top: 40
+			};
+		} else if (currWidth < 768) {
+			size = {
+				left: 266,
+				height: 50,
+				top: 20
+			};
+		}
 		bkgnd.hide();
 		title.css('opacity', 0);
 		titleBkgnd.css('opacity', 0);
 
-		animateTitle(titleLeft, titleHeight, titleTop, 4000, 3000);
+		animateTitle(size.left, size.height, size.top, 4000, 3000);
 
 		bkgnd.fadeIn(5000);
 	}
