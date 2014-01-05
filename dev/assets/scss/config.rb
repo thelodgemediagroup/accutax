@@ -21,10 +21,10 @@ relative_assets = true
 #output_style = :expanded
 
 # 4. When you are ready to launch your WP theme comment out (3) and uncomment the line below
-output_style = :compressed
+#output_style = :compressed
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+#line_comments = false
 
 # don't touch this
 preferred_syntax = :scss
