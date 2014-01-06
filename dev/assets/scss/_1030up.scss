@@ -63,6 +63,29 @@
 	margin-top: 4em;
 }
 
+.featured-el {
+	h2 {
+		font-size: 1.8em;
+		height: 52px;
+		line-height: 1.8em;
+	}
+	h3 {
+		font-size: 1.1em;
+		height: 19px;
+		line-height: 1.1em;
+	}
+	p {
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+}
+
+.colspan-three {
+	width: 28%;
+	margin: 0.6em;
+	padding: 0.8em;
+}
+
 /************************************************************************
 *
 *	Sidebar

@@ -113,6 +113,32 @@
 	margin-top: 3em;
 }
 
+.featured-el {
+	h2 {
+		font-size: 1.6em;
+		height: 41px;
+		line-height: 1.6em;
+	}
+	h3 {
+		font-size: 1em;
+		height: 30px;
+		line-height: 1em;
+	}
+	p {
+		font-size: 0.9em;
+		height: 90px;
+		line-height: 1.2em;
+	}
+}
+
+.colspan-three {
+	width: 30%;
+	margin: 0.3em;
+	padding: 0.2em;
+}
+
+
+
 /************************************************************************
 *
 *	Sidebar
