@@ -1,13 +1,7 @@
 		<div class="footer wrapper">
 			<div class="inner-footer wrapper">
-				<div class="colspan-four footer-col">
 
-				</div><!--/ colspan-four -->
-				<div class="colspan-four footer-col">
-				</div><!--/ colspan-four -->
-				<div class="colspan-four footer-col">
-				</div><!--/ colspan-four -->
-				<div class="colspan-four footer-col">
+				<div class="colspan-four footer-col footer-contact clearfix">
 					<h2>Contact Us</h2>
 					<p class="line-accent">
 						<i class="fa fa-phone"></i>

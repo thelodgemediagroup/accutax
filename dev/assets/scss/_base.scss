@@ -241,12 +241,11 @@ h3 {
 
 .colspan-three {
 	margin: 2em 0 2em 0;
-	width: 100%;
+	width: 95%;
 }
 
 .colspan-four {
-	width: 24%;
-
+	width: 212px;
 }
 
 .featured-el {
@@ -426,13 +425,18 @@ h3 {
 
 .inner-footer {
 	background-color: inherit;
+	min-height: 185px;
 }
 
 .footer-col {
 	display: inline-block;
 	padding: 1em 0 1em 0;
 }
- 
+
+.footer-contact {
+	float: right;
+} 
+
 .copyright {
 	background-color: $bkgnd-darker;
 	border-top: 4px solid $border-dark-two;
