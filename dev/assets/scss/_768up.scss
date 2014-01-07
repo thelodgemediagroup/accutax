@@ -179,6 +179,22 @@
 	}
 }
 
+#map-canvas {
+	float: right;	
+	height: 270px;
+	width:400px;
+}
+
+.contact-box {
+	clear: none;
+	float: left;
+	margin-top: 6em;
+	text-align: left;
+	width: auto;
+	p {
+		font-size: 0.9em;
+	}
+}
 
 /************************************************************************
 *

@@ -2,7 +2,7 @@
 	<div class="page-text contact-page">
 		<h1 class="subpage-header">Contact	 <span class="logo-color">Accutax</span></h1>
 
-		<div class="top-space contact-box">
+		<div class="contact-box">
 			<h3><span class="logo-color">Accutax</span></h3>
 			<p>8639 Hall Rd</p>
 			<p>Utica, MI 48317</p>			
@@ -23,10 +23,56 @@
 
 	</div><!--/ .page-text -->
 </div><!--/ .subpage -->
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsfAZQ64YFueYYVm6h_gjPS4CUktkOgvg&sensor=false">
-    </script>
+<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsfAZQ64YFueYYVm6h_gjPS4CUktkOgvg&sensor=false">
+</script>
 <script type="text/javascript">
+
+/*
+$(document).ready(function() {
+
+	var mapCanvas = $('#map-canvas');
+
+	var currWidth = $(window).width();
+
+	function getMapSize() {
+
+		if (currWidth > 1030) {
+			mapBox = {
+				height: 320,
+				width: 520
+			};
+		} else if (currWidth < 1030 && currWidth > 860) {
+			mapBox = {
+				height: 290,
+				width: 420
+			};
+		} else if (currWidth <= 860 && currWidth > 670) {
+			mapBox = {
+				height: 290,
+				width: 360
+			};
+		} else if (currWidth <= 670 && currWidth > 600) {
+			mapBox = {
+				height: 240,
+				width: 300
+			};
+		} else {
+			mapBox = {
+				height: 210,
+				width: 320
+			};
+		}
+		mapCanvas.css({
+			'height' : mapBox.height,
+			'width' : mapBox.
+		});
+	}
+
+	
+
+});
+*/
 
 google.maps.visualRefresh = true;
 var map;
