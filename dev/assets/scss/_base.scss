@@ -173,10 +173,17 @@ h3 {
 }
 
 .img-border {
-	border: 1px solid #ccc;
-	height: 416px;
-	margin: 2em 0 2em 0;
-	width: 800px;
+	@include borderbox;
+	margin: 2em auto 2em auto;
+	width: 100%;
+}
+
+.about-page {
+	p {
+		font-size: 0.9em;
+		margin-left: 0.4em;
+		margin-right: 0.4em;
+	}
 }
 
 /************************************************************************
@@ -351,7 +358,10 @@ h3 {
 .page-text {
 	line-height: 1.7em;
 	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: justify;
+	width: 100%
 }
 
 .indent {
@@ -359,9 +369,16 @@ h3 {
 }
 
 #map-canvas {
-	height:320px;
+	float: right;
+	/* height:320px; */
 	margin-top: 30px;
-	width:520px;	
+	/*width:520px;	*/
+	height: 30%;
+	width: 40%;
+}
+
+.contact-box {
+	float: left;
 }
 
 .resource-group {

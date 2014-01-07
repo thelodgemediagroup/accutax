@@ -1,8 +1,8 @@
 <div class="subpage container-800 clearfix">
-	<div class="page-text">
+	<div class="page-text contact-page">
 		<h1 class="subpage-header">Contact	 <span class="logo-color">Accutax</span></h1>
 
-		<div class="floatleft top-space">
+		<div class="top-space contact-box">
 			<h3><span class="logo-color">Accutax</span></h3>
 			<p>8639 Hall Rd</p>
 			<p>Utica, MI 48317</p>			
@@ -18,11 +18,8 @@
 			
 		</div>
 
-		<div class="floatright">
-			<div id="map-canvas" style="height:320px;width:520px;">
-
-			</div><!--/ #map-canvas -->
-		</div>
+		<div id="map-canvas">
+		</div><!--/ #map-canvas -->
 
 	</div><!--/ .page-text -->
 </div><!--/ .subpage -->

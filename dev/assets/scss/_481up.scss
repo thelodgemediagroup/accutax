@@ -9,6 +9,10 @@
 	width: 481px;
 }
 
+.page-text {
+	width: 90%;
+}
+
 
 /************************************************************************
 *
@@ -68,6 +72,13 @@
 .resource-group {
 	margin: 0 auto;
 	width: 95%;
+}
+
+.about-page {
+	p {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 

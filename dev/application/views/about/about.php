@@ -1,5 +1,5 @@
 <div class="subpage container-800 clearfix">
-	<div class="page-text">
+	<div class="page-text about-page">
 		<h1 class="text-center"><span class="logo-color">Accutax</span> - Since 1968</h1>
 
 		<div class="img-border">
