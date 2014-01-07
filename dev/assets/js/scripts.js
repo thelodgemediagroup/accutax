@@ -109,7 +109,7 @@ $(document).ready(function() {
 
 	}, 150);
 
-    $('.mobile-nav > option').click(function(){
+    $('.mobile-nav select').change(function(){
 
         if ($(this).val() != '')
         {

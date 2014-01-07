@@ -38,13 +38,15 @@
 					<li><a href="<?php echo base_url('about/'); ?>">About</a></li>
 					<li><a href="<?php echo base_url('contact/'); ?>">Contact Us</a></li>
 				</ul><!--/ .main-nav -->
-				<select class="mobile-nav">
-						<option value="">Navigation</option>
-						<option value="<?php echo base_url('Business'); ?>">Business</option>
-						<option value="<?php echo base_url('Personal'); ?>">Personal</option>
-						<option value="<?php echo base_url('Resources'); ?>">Resources</option>
-						<option value="<?php echo base_url('About'); ?>">About</option>
-						<option value="<?php echo base_url('Contact'); ?>">Contact</option>
-				</select><!--/ .mobile-nav -->
+				<div class="mobile-nav">
+					<select>
+							<option value="">Navigation</option>
+							<option value="<?php echo base_url('business'); ?>">Business</option>
+							<option value="<?php echo base_url('personal'); ?>">Personal</option>
+							<option value="<?php echo base_url('resources'); ?>">Resources</option>
+							<option value="<?php echo base_url('about'); ?>">About</option>
+							<option value="<?php echo base_url('contact'); ?>">Contact</option>
+					</select>
+				</div>
 			</div><!--/ .container -->
 		</div><!--/ .header -->

@@ -212,22 +212,28 @@ h3 {
 	display: none;
 }
 
-.mobile-nav {
+.mobile-nav select {
 	background: transparent;
-	background-color: #F5F5F5;
 	clear: both;
 	display: block;
 	width: 268px;
 	padding: 5px;
 	font-size: 16px;
 	line-height: 1;
-	margin: 2em auto 1em auto;
+
 	border: 0;
 	border-radius: 0;
 	height: 34px;
 	-webkit-appearance: none;
 }
 
+.mobile-nav {
+	background: url(../images/nav_arrow.png) no-repeat right #F5F5F5;
+	width: 248px;
+	margin: 2em auto 1em auto;	
+	height: 34px;
+	overflow: hidden;
+}
 /************************************************************************
 *
 *	Page Content
