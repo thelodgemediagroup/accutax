@@ -64,7 +64,11 @@ h3 {
 
 .container-800 {
 	margin: 0 auto;
-	width: 800px;
+	min-width: 320px;
+	width: 100%;
+	.subpage-header {
+		text-align: center;
+	}
 }
 
 .container-960 {
@@ -319,6 +323,7 @@ h3 {
 .list-heading {
 	font-size: 1.3em;
 	margin-top: 2em;
+	text-align: center;
 }
 
 .featured-middle {
@@ -359,6 +364,14 @@ h3 {
 	width:520px;	
 }
 
+.resource-group {
+	p {
+		text-align: center;
+	}
+	a {
+		font-size: 0.8em;
+	}
+}
 
 /************************************************************************
 *

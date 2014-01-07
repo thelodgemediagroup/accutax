@@ -9,6 +9,12 @@
 	width: 1030px;
 }
 
+.container-800 {
+	width: 800px;	
+	.subpage-header {
+		text-align: left;
+	}
+}
 
 
 /************************************************************************
@@ -88,6 +94,14 @@
 
 .page-content {
 	width: 79%;
+}
+
+.subpage-subheader {
+	margin-left: 4em;
+}
+
+.resource-group {
+	margin-left: 0;
 }
 
 /************************************************************************

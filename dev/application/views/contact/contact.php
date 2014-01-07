@@ -1,6 +1,6 @@
 <div class="subpage container-800 clearfix">
 	<div class="page-text">
-		<h1>Contact	 <span class="logo-color">Accutax</span></h1>
+		<h1 class="subpage-header">Contact	 <span class="logo-color">Accutax</span></h1>
 
 		<div class="floatleft top-space">
 			<h3><span class="logo-color">Accutax</span></h3>

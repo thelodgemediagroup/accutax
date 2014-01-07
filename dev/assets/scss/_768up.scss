@@ -9,6 +9,13 @@
 	width: 768px;
 }
 
+.container-800 {
+	text-align: left;
+}
+
+.list-heading {
+	text-align: left;
+}
 
 /************************************************************************
 *
@@ -149,6 +156,17 @@
 	}
 }
 
+.resource-group {
+	margin-left: 15%;
+	width: 75%;
+	p {
+		text-align: left;
+		margin-left: 4em;
+	}
+	a {
+		font-size: 1em;
+	}
+}
 
 /************************************************************************
 *
