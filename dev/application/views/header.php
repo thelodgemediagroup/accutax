@@ -6,7 +6,7 @@
 	<meta name="description" content="<?php echo $page_desc; ?>" />
 	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_asset('css/style.css'); ?>">
-	<script src="<?php get_asset('js/respond.js'); ?>"></script>
+	<script src="<?php echo get_asset('js/respond.js'); ?>"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 </head>
